@@ -1,0 +1,12 @@
+{
+  "name": "antd-doc-migration-script",
+  "version": "0.0.1-alpha",
+  "description": "Node script for building stories from antd mdx",
+  "main": "index.mjs",
+  "scripts": {
+    "test": "node spec.js"
+  },
+  "author": "alexpozdnyakof",
+  "license": "MIT",
+  "type": "module"
+}
