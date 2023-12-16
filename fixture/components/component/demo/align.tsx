@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import {
   AutoComplete,
   Button,
@@ -12,7 +12,7 @@ import {
   TimePicker,
   TreeSelect,
   Typography,
-} from 'antd';
+} from "antd";
 
 const { Text } = Typography;
 const { RangePicker } = DatePicker;
@@ -23,32 +23,32 @@ const narrowStyle: React.CSSProperties = {
 
 const options = [
   {
-    value: 'zhejiang',
-    label: 'Zhejiang',
+    value: "zhejiang",
+    label: "Zhejiang",
     children: [
       {
-        value: 'hangzhou',
-        label: 'Hangzhou',
+        value: "hangzhou",
+        label: "Hangzhou",
         children: [
           {
-            value: 'xihu',
-            label: 'West Lake',
+            value: "xihu",
+            label: "West Lake",
           },
         ],
       },
     ],
   },
   {
-    value: 'jiangsu',
-    label: 'Jiangsu',
+    value: "jiangsu",
+    label: "Jiangsu",
     children: [
       {
-        value: 'nanjing',
-        label: 'Nanjing',
+        value: "nanjing",
+        label: "Nanjing",
         children: [
           {
-            value: 'zhonghuamen',
-            label: 'Zhong Hua Men',
+            value: "zhonghuamen",
+            label: "Zhong Hua Men",
           },
         ],
       },
@@ -57,8 +57,8 @@ const options = [
 ];
 
 const selectOptions = [
-  { value: 'jack', label: 'Jack' },
-  { value: 'lucy', label: 'Lucy' },
+  { value: "jack", label: "Jack" },
+  { value: "lucy", label: "Lucy" },
 ];
 
 const App: React.FC = () => (
@@ -73,11 +73,18 @@ const App: React.FC = () => (
     <InputNumber style={{ width: 100 }} />
     <DatePicker style={{ width: 100 }} />
     <TimePicker style={{ width: 100 }} />
-    <Select style={{ width: 100 }} defaultValue="jack" options={selectOptions} />
+    <Select
+      style={{ width: 100 }}
+      defaultValue="jack"
+      options={selectOptions}
+    />
     <Select style={{ width: 100 }} defaultValue="" options={selectOptions} />
     <Select style={{ width: 100 }} options={selectOptions} />
     <TreeSelect style={{ width: 100 }} />
-    <Cascader defaultValue={['zhejiang', 'hangzhou', 'xihu']} options={options} />
+    <Cascader
+      defaultValue={["zhejiang", "hangzhou", "xihu"]}
+      options={options}
+    />
     <RangePicker />
     <DatePicker picker="month" />
     <Radio.Group defaultValue="a">
@@ -86,7 +93,12 @@ const App: React.FC = () => (
     </Radio.Group>
     <AutoComplete style={{ width: 100 }} placeholder="input here" />
     <br />
-    <Input prefix="$" addonBefore="Http://" addonAfter=".com" defaultValue="mysite" />
+    <Input
+      prefix="$"
+      addonBefore="Http://"
+      addonAfter=".com"
+      defaultValue="mysite"
+    />
     <Input style={narrowStyle} suffix="Y" />
     <Input style={narrowStyle} />
     <Input style={narrowStyle} defaultValue="1" suffix="Y" />
