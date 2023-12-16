@@ -8,5 +8,8 @@
   },
   "author": "alexpozdnyakof",
   "license": "MIT",
-  "type": "module"
+  "type": "module",
+  "devDependencies": {
+    "prettier": "^3.1.1"
+  }
 }
